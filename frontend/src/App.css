@@ -1,0 +1,440 @@
+@font-face {
+  font-family: 'Onest';
+  src: url('./Components/Font/Onest/TTF/Onest-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Onest';
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* ------------------------------------- App.js -------------------------------------- */
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ------------------------------------- Home.jsx -------------------------------------- */
+
+.Background {
+  background: radial-gradient(199.16% 100% at 50% 0%, rgba(216, 30, 91, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, #000 100%), url(../public/Images/BackgroundImage.png), lightgray 50% / cover no-repeat;
+}
+
+/* ------------------------------------- Home.jsx / NavigationBar -------------------------------------- */
+
+.NavigationBar {
+  padding-bottom: 80px;
+}
+
+.NavigationContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0px;
+  margin: 0px 80px;
+  border-bottom: solid 0.5px rgba(255, 255, 255, 0.08);
+}
+
+.Menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.DropdownTrigger {
+  cursor: pointer;
+  padding-bottom: 12px;
+}
+
+.DropdownContent {
+  display: none;
+  position: absolute;
+  top: 6.5%;
+  background-color: white;
+  z-index: 1;
+  border: solid 0.5px rgba(0, 0, 0, .15);
+  border-radius: 24px;
+}
+
+.DropdownTrigger:hover ~ .DropdownContent {
+  display: block;
+}
+
+.DropdownContent:hover {
+  display: block;
+}
+
+.DropdownContent ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 60px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.DropdownContent li {
+  padding: 0;
+}
+
+.DropdownContent ul li a {
+  text-decoration: none;
+  color: black;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*---------------------------------- */
+
+.Menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* ------------------------------------- Home.jsx / Page -------------------------------------- */
+
+.Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.HeadingText1 {
+  text-align: center;
+  font-size: 100px;
+  font-weight: 500;
+  max-width: 60%;
+}
+
+.HeadingText2 {
+  color: var(--brand-cloudy, #8AA2A9);
+  font-size: 20px;
+  font-weight: 400;
+  margin: 40px auto;
+}
+
+.ButtonContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.ButtonContent a {
+  text-decoration: none;
+}
+
+.ButtonContent button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 20px 32px;
+  border-radius: 100px;
+  border: 2px solid rgba(0, 0, 0, 0.05);
+  background: var(--brand-sunshine, linear-gradient(260deg, #FBDF06 -2.01%, #FEB700 100%));
+  box-shadow: 0px 0px 19.56px 0px rgba(251, 223, 9, 0.10), 0px 0px 39.12px 0px rgba(251, 223, 9, 0.10), 0px 0px 136.92px 0px rgba(251, 223, 9, 0.40), 0px 0px 273.84px 0px rgba(251, 223, 9, 0.40), 0px 0px 469.44px 0px rgba(251, 223, 9, 0.40), 0px 0px 821.52002px 0px rgba(251, 223, 9, 0.40);
+}
+
+.ButtonContent span {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+/* ------------------------------------- Home.jsx / Services -------------------------------------- */
+
+.Services {
+  border-radius: 40px 40px 0px 0px;
+  background: var(--brand-snowy, #FFF);
+  padding-bottom: 80px;
+}
+
+.HeadingText3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.HeadingText3 span {
+  text-align: center;
+  font-size: 56px;
+  font-weight: 500;
+  color: black;
+  max-width: 30%;
+}
+
+.Row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2%;
+}
+
+.ServicesImageContainer {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  align-self: flex-end;
+}
+
+.ServicesImageContainer img {
+  max-width: 100%;
+}
+
+.ServicesImageContainer:nth-child(1) {
+  padding-bottom: 24px;
+  align-self: flex-start;
+}
+
+.ServicesImageContainer:nth-child(4) {
+  align-self: flex-start;
+}
+
+.ServicesImageContainer img:nth-child(1) {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.Overlay {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+  padding: 24px;
+}
+
+.Overlay span {
+  text-shadow: 0px 4px 40px #000;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.Overlay img {
+  background: white;
+  padding: 8px;
+  border-radius: 24px;
+}
+
+/* ------------------------------------- Home.jsx / Advantages -------------------------------------- */
+
+.Advantages {
+  border-radius: 0px 0px 40px 40px;
+  background: var(--brand-snowy, #FFF);
+  padding-bottom: 80px;
+}
+
+.AdvantagesContainer {
+  margin: 0px 80px;
+  background: radial-gradient(199.16% 100% at 50% 0%, rgba(216, 30, 91, 0.10) 0%, rgba(0, 0, 0, 0.00) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.80) 0%, #000 100%), url(../public/Images/BackgroundImage.png), lightgray 50% / cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 16px;
+}
+
+.TextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 68px;
+  flex-wrap: wrap;
+  padding: 80px 0px 80px 80px;
+}
+
+.TextContainer span:nth-child(1) {
+  font-size: 56px;
+  font-weight: 500;
+  background: linear-gradient(95deg, #97B8C1 0%, #FFF 95.9%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+  max-width: 50%;
+  text-align: left;
+}
+
+.AdvantagesList {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-rows: repeat(2, minmax(auto, 1fr));
+  column-gap: 40px;
+  row-gap: 48px;
+}
+
+.Box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Box span {
+  color: var(--brand-cloudy, #8AA2A9);
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.ImageContainer {
+  display: flex;
+  align-self: flex-end;
+}
+
+.ImageContainer img {
+  max-width: 100%;
+  border-radius: 0px 0px 16px 0px;
+}
+
+/* ------------------------------------- Home.jsx / Projects -------------------------------------- */
+
+.ProjectsContainer {
+  margin: 100px 80px auto 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.ProjectHeader {
+  font-size: 56px;
+  font-weight: 500;
+}
+
+.ProjectsList {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0px, 1fr));
+  column-gap: 24px;
+  row-gap: 24px;
+  justify-self: center;
+  align-self: center;
+}
+
+.ItemsContainer {
+  display: flex;
+  position: relative;
+  align-self: flex-start;
+  justify-self: center;
+}
+
+.ItemsContainer img {
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.OverlayProjects {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  align-self: flex-end;
+  min-width: 100%;
+  padding: 24px;
+}
+
+.OverlayProjects img {
+  padding: 6px;
+  background: white;
+}
+
+
+
+.Clients {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ClientHeading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.ClientHeading span:nth-child(1) {
+  font-size: 100px;
+  font-weight: 700;
+  background: linear-gradient(344deg, rgba(151, 184, 193, 0.50) 28.62%, #FFF 93.41%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: left;
+}
+
+.ClientHeading span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-cloudy, #8AA2A9);
+  text-align: left;
+}
+
+.ClientsList {
+  display: flex;
+  flex-direction: column;
+}
