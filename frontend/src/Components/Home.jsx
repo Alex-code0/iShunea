@@ -288,7 +288,7 @@ const Home = () => {
             </div>
 
             <div className="Footer">
-
+                <span>TRADEMARK</span>
             </div>
 
         </div>
