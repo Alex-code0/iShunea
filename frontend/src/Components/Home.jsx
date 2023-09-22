@@ -285,6 +285,57 @@ const Home = () => {
                     </div>
                 </div>
 
+                <div className="Progress">
+                    <div className="ProgressItemsContainer">
+
+                        <div className="ProgressHeader">
+                            <span>How it works</span>
+                            <span>Our processes are transparent so you will know what we are working on, and why</span>
+                        </div>
+
+                        <div className="ProgressGrid">
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Research & Wireframing</span>
+                                <span>We set up a wireframe to establish the architecture of the product. This will give everyone the insight on the 'big picture' of your risks and opportunities.</span>
+                            </div>
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Product Design</span>
+                                <span>Our design team create high-quality prototype of your solution based on the wireframes and going through all the screens and elements. Here we have an iterative process where we design a target blueprint of how your product should look like. We create engaging, user-friendly and stunning designs that will seamlessly communicate with end-users and make you stand out among your competitors.</span>
+                            </div>
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Analysis, Discussion & Offer</span>
+                                <span>We analyse your objectives and expectations going through all the requirements. Then we have an estimation of the price & time for product development.</span>
+                            </div>
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Testing & Quality Assurance</span>
+                                <span>The product goes through several testing phases to ensure that there are no bugs or lags and the product itself provides a good user experience. At this stage we prepare you with the documentation on how to manage and update the product. By leveraging a dedicated pool of professional QA engineers, we manage all aspects of testing to meet your objectives, improve quality, and increase release velocity.</span>
+                            </div>
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Solution Development</span>
+                                <span>Our team of developers build your product using modern coding standards and proven technologies to ensure that it is quickly, secure and scalable.</span>
+                            </div>
+
+                            <div className="Card">
+                                <img src="" alt="" />
+                                <span>Product Launch</span>
+                                <span>This is not the end of our commitment. We provide technical support for a period of time so you will not be on your own once the work is completed.</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
 
             <div className="Footer">

@@ -402,7 +402,7 @@ body {
   background: white;
 }
 
-
+/* ------------------------------------- Home.jsx / Clients -------------------------------------- */
 
 .Clients {
   display: flex;
@@ -437,4 +437,71 @@ body {
 .ClientsList {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Row2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 100%;
+}
+
+/* ------------------------------------- Home.jsx / Progress -------------------------------------- */
+
+.Progress {
+  border-radius: 40px 40px 0px 0px;
+  background: #FAFAFA; 
+}
+
+.ProgressItemsContainer {
+  background: transparent;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0px, 1fr));
+  grid-template-rows: repeat(9, minmax(0, 1fr));
+}
+
+.ProgressHeader span:nth-child(1) {
+  font-size: 56px;
+  font-weight: 500;
+  color: black;
+}
+
+.ProgressContainer span:nth-child(2) {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+  opacity: .5;
+}
+
+.Card:nth-child(1) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.Card:nth-child(2) {
+  
+}
+
+.Card span:nth-child(2) {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.Card span:nth-child(3) {
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: .5;
 }
