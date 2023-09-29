@@ -482,18 +482,46 @@ body {
   opacity: .5;
 }
 
-.Card:nth-child(1) {
+.Card:nth-child(2) {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 4;
 }
 
-.Card:nth-child(2) {
-  grid-row-start: ;
-  grid-row-end: ;
-  grid-column-start: ;
-  grid-column-end: ;
+.Card:nth-child(3) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.Card:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+.Card:nth-child(5) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 9;
+}
+
+.Card:nth-child(6) {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 5;
+  grid-row-end: 9;
+}
+
+.Card:nth-child(7) {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 9;
 }
 
 .Card span:nth-child(2) {
