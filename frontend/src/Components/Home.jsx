@@ -331,6 +331,22 @@ const Home = () => {
                     </div>
                 </div>
 
+                <div className="CallToActionContainer">
+                    <div className="InnerCallContainer">
+                        <img src="./Images/CallToActionBackground.png" alt="" />
+                        <div className="OverlayCall">
+                            <span>Not sure about what you need?</span>
+                            <span>Request a consultation so we offer our knowledge base to help you set up the best digital solution for your business</span>
+                            <a href="/">
+                                <button>
+                                    <span>request now</span>
+                                    <img src="" alt="" />
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div className="Footer">

@@ -209,7 +209,7 @@ body {
 .Services {
   border-radius: 40px 40px 0px 0px;
   background: var(--brand-snowy, #FFF);
-  padding-bottom: 80px;
+  padding: 0 80px 80px 80px;
 }
 
 .HeadingText3 {
@@ -554,4 +554,51 @@ body {
   font-weight: 400;
   opacity: .5;
   text-align: left;
+}
+
+/* ------------------------------------- Home.jsx / CallToAction -------------------------------------- */
+
+.CallToActionContainer {
+  background: white;
+}
+
+.InnerCallContainer {
+  position: relative;
+  padding: 100px 80px 100px 80px;
+  display: flex;
+}
+
+.InnerCallContainer img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.OverlayCall {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: start; 
+}
+
+.OverlayCall span {
+  font-size: 56px;
+  font-weight: 500;
+  text-align: left;
+}
+
+.OverlayCall span:nth-child(2) {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.OverlayCall a button {
+  padding: 20px 32px;
+  background: white;
+  border: none;
+  border-radius: 100px;
+}
+
+.OverlayCall a button span {
+  font-size: 16px;
+  font-weight: 700;
 }
