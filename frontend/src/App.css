@@ -96,11 +96,10 @@ body {
 .DropdownContent {
   display: none;
   position: absolute;
-  top: 6.5%;
   background-color: white;
   z-index: 1;
-  border: solid 0.5px rgba(0, 0, 0, .15);
   border-radius: 24px;
+  margin-top: 8px;
 }
 
 .DropdownTrigger:hover ~ .DropdownContent {
@@ -449,6 +448,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .Row2 {
@@ -577,7 +577,11 @@ body {
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: start; 
+  align-items: start;
+  padding-left: 5%;
+  top: 35%;
+  max-width: 45%;
+  flex-wrap: wrap;
 }
 
 .OverlayCall span {
@@ -589,6 +593,11 @@ body {
 .OverlayCall span:nth-child(2) {
   font-size: 20px;
   font-weight: 400;
+  padding: 8px 0 40px 0;
+}
+
+.OverlayCall a {
+  text-decoration: none;
 }
 
 .OverlayCall a button {
@@ -596,9 +605,88 @@ body {
   background: white;
   border: none;
   border-radius: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
 .OverlayCall a button span {
   font-size: 16px;
   font-weight: 700;
+  max-width: 100%;
+}
+
+/* ------------------------------------- Home.jsx / Blog -------------------------------------- */
+
+.Blog {
+  background: white;
+}
+
+.BlogContainer {
+  margin: 0 80px 100px 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.BlogList {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.ArticleHeader {
+  font-size: 56px;
+  font-weight: 500;
+  color: var(--brand-charcoal, #000);
+}
+
+.NewsCard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+
+.ImageContainer {
+  position: relative;
+}
+
+.ImageContainer img {
+  border-radius: 20px;
+}
+
+.BlogOverlay {
+  position: absolute;
+  display: flex;
+  border-radius: 20px;
+  border: 1px solid var(--brand-snowy, #FFF);
+  background: radial-gradient(49.75% 100% at 50% 100%, rgba(251, 223, 6, 0.10) 0%, rgba(251, 223, 6, 0.00) 100%), rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(10px);
+  margin: 16px auto auto 16px;
+}
+
+.BlogOverlay span {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 4px 12px;
+}
+
+.Description1 {
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--brand-charcoal, #000);
+  text-align: left;
+  margin: 16px 0 8px 0;
+}
+
+.Description2 {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-charcoal, #000);
+  opacity: .5;
 }

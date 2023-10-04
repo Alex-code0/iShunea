@@ -340,9 +340,63 @@ const Home = () => {
                             <a href="/">
                                 <button>
                                     <span>request now</span>
-                                    <img src="" alt="" />
+                                    <img src="./Images/Icon.png" alt="" />
                                 </button>
                             </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="Blog">
+                    <div className="BlogContainer">
+                        <span className="ArticleHeader">Latest article</span>
+                        <div className="BlogList">
+
+                            <div className="NewsCard">
+                                <div className="ImageContainer">
+                                    <img src="./Images/NewsImage1.png" alt="" />
+                                    <div className="BlogOverlay">
+                                        <span>insight</span>
+                                    </div>
+                                </div>
+                                <span className="Description1">The Impact We Have on Our Customers and Our Community</span>
+                                <span className="Description2">November 27, 2022</span>
+                            </div>
+
+                            <div className="NewsCard">
+                                <div className="ImageContainer">
+                                    <img src="./Images/NewsImage2.png" alt="" />
+                                    <div className="BlogOverlay">
+                                        <span>discount</span>
+                                    </div>
+                                </div>
+                                <span className="Description1">Don't Forget to Catch Black Friday Free Consultation</span>
+                                <span className="Description2">November 24, 2022</span>
+                            </div>
+
+                            <div className="NewsCard">
+                                <div className="ImageContainer">
+                                    <img src="./Images/NewsImage3.png" alt="" />
+                                    <div className="BlogOverlay">
+                                        <span>insight</span>
+                                    </div>
+                                </div>
+                                <span className="Description1">What is The Role of Computer in Information Technology?</span>
+                                <span className="Description2">November 03, 2022</span>
+                            </div>
+
+                            <div className="NewsCard">
+                                <div className="ImageContainer">
+                                    <img src="./Images/NewsImage4.png" alt="" />
+                                    <div className="BlogOverlay">
+                                        <span>partnership</span>
+                                    </div>
+                                </div>
+
+                                <span className="Description1">New Partnership with Nicolae Testemițanu State University</span>
+                                <span className="Description2">October 07, 2022</span>
+                            </div>
+
                         </div>
                     </div>
                 </div>
