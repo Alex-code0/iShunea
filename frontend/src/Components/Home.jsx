@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+
 const Home = () => {
     return (
         <div className="Background">
@@ -12,9 +14,9 @@ const Home = () => {
                             <span></span>
                             <div className="DropdownContent">
                                 <ul>
-                                    <li><a href="/about">about</a></li>
-                                    <li><a href="/career">career</a></li>
-                                    <li><a href="/blog">blog</a></li>
+                                    <li><NavLink to="/about">about</NavLink></li>
+                                    <li><NavLink to="/career">career</NavLink></li>
+                                    <li><NavLink to="/blog">blog</NavLink></li>
                                 </ul>
                             </div>
                         </div>
@@ -110,7 +112,7 @@ const Home = () => {
                                     <img src="./Images/Icon2.png" alt="" />
                                     <span>team of qualified professionals</span>
                                 </div>
-
+                                
                                 <div className="Box">
                                     <img src="./Images/Icon3.png" alt="" />
                                     <span>transparent and individual approach</span>
@@ -134,7 +136,7 @@ const Home = () => {
                             </div>
                         </div>
 
-                        <div className="ImageContainer">
+                        <div className="ImageContainer" id="BoxImageContainer">
                             <img src="./Images/Screen.png" alt="" />
                         </div>
                     </div>
@@ -404,9 +406,61 @@ const Home = () => {
             </div>
 
             <div className="Footer">
-                
-            </div>
+                <div className="FooterContainer">
+                    <div className="HeaderContainer">
 
+                        <div className="Heading2">
+                            <span className="HeaderText">info@ishunea.io</span>
+
+                            <div className="ContactsContainer">
+
+                                <div className="Contacts">
+                                    <span>+373 (78) 158 337</span>
+                                    <span>Moldova</span>
+                                </div>
+
+                                <div className="Contacts">
+                                    <span>+972 558-5556-42</span>
+                                    <span>Israel</span>
+                                </div>
+
+                                <div className="Contacts">
+                                    <span>Monday - Friday, 09:00 - 18:00</span>
+                                    <span>Working hours</span>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        
+                        <div className="ButtonContainer">
+                            <a href="/">
+                                <button>
+                                    <span>request a call</span>
+                                    <img src="./Images/Icon.png" alt="" />
+                                </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div className="Copyright">
+                        
+                        <div className="Social">
+                            <a href="/">Facebook</a>
+                            <a href="/">Instagram</a>
+                            <a href="/">LinkedIn</a>
+                        </div>
+
+                        <div className="Legal">
+                            <a href="">Terms and Conditions</a>
+                            <span>© 2019 - 2022 iShunea. All rights reserved</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
         </div>
     );
 };
